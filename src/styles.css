@@ -118,3 +118,32 @@
 .shadow-glow { box-shadow: 0 10px 30px -10px color-mix(in oklab, var(--primary-glow) 70%, transparent); }
 .shadow-card { box-shadow: 0 30px 60px -30px oklch(0 0 0 / 0.8); }
 html { scroll-behavior: smooth; }
+
+/* Cinematic atmosphere */
+.ember {
+  position: absolute; bottom: -10px; border-radius: 9999px;
+  background: var(--primary); box-shadow: 0 0 8px 2px color-mix(in oklab, var(--primary) 70%, transparent);
+  animation: ember-rise linear infinite; opacity: 0;
+}
+@keyframes ember-rise {
+  0% { transform: translate(0, 0); opacity: 0; }
+  10% { opacity: 0.9; }
+  50% { transform: translate(20px, -50vh); }
+  100% { transform: translate(-15px, -105vh); opacity: 0; }
+}
+.steam {
+  position: absolute; width: 40px; height: 120px; border-radius: 9999px;
+  background: radial-gradient(ellipse at center, color-mix(in oklab, var(--foreground) 18%, transparent), transparent 70%);
+  filter: blur(10px); animation: steam-rise 3.6s ease-out infinite; opacity: 0;
+}
+@keyframes steam-rise {
+  0% { transform: translateY(40px) scale(0.6); opacity: 0; }
+  30% { opacity: 0.7; }
+  100% { transform: translateY(-120px) scale(1.6) skewX(12deg); opacity: 0; }
+}
+.table-shadow {
+  width: 380px; height: 60px; border-radius: 50%;
+  background: radial-gradient(ellipse at center, oklch(0 0 0 / 0.7), transparent 70%);
+  filter: blur(8px);
+}
+@media (prefers-reduced-motion: reduce) { .ember, .steam { animation: none; display: none; } }
