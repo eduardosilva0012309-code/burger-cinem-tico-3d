@@ -1,14 +1,21 @@
-# Welcome to your Lovable project
+# Burger Cinemático 3D
+
+Quero fazer um Cardápio Digital para uma hamburgueria em formato 3D cinematográfico
+
+Quero que tenha um Hambúrguer e ao descer a página ele vem se abrindo e falando cada coisa que leva, apos isso vai sair dessa parte e ir para uma onde tem variação de tipos de hamburguer pra pessoa escolher com preço e botão para pedir 
+
+Faça um painel para eu colocar o nome e fotos via arquivo, mas preapre tudo com fotos reais e nada generico.
+Quero que o Hamburguer da cena cinematografica seja um hamburguer real
 
 This project was built with [Lovable](https://lovable.dev).
 
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/54cbb697-8476-4291-818b-0aba04cb67e2).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +27,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
